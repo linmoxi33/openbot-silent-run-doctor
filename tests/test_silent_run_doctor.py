@@ -47,7 +47,8 @@ class Behaviour(unittest.TestCase):
         self.assertEqual(r.returncode, 1)
         rep = json.loads(r.stdout)
         self.assertEqual(rep["verdict"], "confirmed-tool-overflow")
-        self.assertEqual(rep["tools"], {"count": 131, "over_limit": True})
+        self.assertEqual(rep["tools"]["count"], 131)
+        self.assertTrue(rep["tools"]["over_limit"])
         rules = {f["rule"] for f in rep["findings"]}
         self.assertTrue({"RUN_FINISHED_WITHOUT_OUTPUT", "TOOL_ARRAY_OVER_MODEL_LIMIT",
                          "PROVIDER_REJECTION_IN_LOG"} <= rules)
@@ -122,6 +123,27 @@ class Behaviour(unittest.TestCase):
         a, b = run(args), run(args)
         self.assertEqual(a.stdout, b.stdout)
         json.loads(a.stdout)
+
+    def test_drop_plan_is_arithmetically_minimal(self):
+        names = ["t%03d" % i for i in range(131)]
+        plan = srd.plan_drop(names, [10] * 131, 128)
+        self.assertEqual(plan["must_drop"], 3)
+        self.assertEqual(plan["remaining"], 128)
+        self.assertEqual(len(plan["drop"]), 3)
+        self.assertTrue(plan["one_minimal_verified"])
+        self.assertEqual(srd.plan_drop(names[:100], [10] * 100, 128)["must_drop"], 0)
+
+    def test_plan_flag_lists_drops(self):
+        r = run(["--events", "examples/in/silent-overflow.events.jsonl",
+                 "--tools", "examples/in/silent-overflow.tools.json", "--plan"])
+        self.assertEqual(r.returncode, 1)
+        self.assertIn("drop plan (largest schemas first): 3 tool(s)", r.stdout)
+        self.assertIn("  - tool_", r.stdout)
+        rep = run(["--events", "examples/in/silent-overflow.events.jsonl",
+                   "--tools", "examples/in/silent-overflow.tools.json", "--json"])
+        rem = json.loads(rep.stdout)["tools"]["remediation"]
+        self.assertEqual(rem["must_drop"], 3)
+        self.assertTrue(rem["one_minimal_verified"])
 
     def test_examples_out_matches_live_run(self):
         for name, args in (

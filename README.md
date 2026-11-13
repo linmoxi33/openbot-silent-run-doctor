@@ -56,9 +56,10 @@ tools: 131 (limit 128)
 runs: 1
 [ERROR] RUN_FINISHED_WITHOUT_OUTPUT line 3: run ended at line 3 with no text/tool events and zero measured tokens
 [ERROR] TOOL_ARRAY_OVER_MODEL_LIMIT: 131 tools sent, model limit is 128 (over by 3)
+[INFO] REMEDIATION_PLAN: drop 3 tool(s) to fit; largest schemas first
 [ERROR] PROVIDER_REJECTION_IN_LOG: server log carries the provider's tool-array rejection
 [INFO] TITLE_GENERATION_EMPTY: thread-title generation also got an empty answer — corroborates a provider-side refusal
-summary: 3 error(s), 0 warning(s), 1 info
+summary: 3 error(s), 0 warning(s), 2 info
 ```
 
 `--json` (stable key order, no timestamps, byte-identical across runs):
@@ -70,7 +71,12 @@ python3 bin/openbot-silent-run-doctor --events examples/in/silent-unattributed.e
 
 Exit codes: `0` no error (warnings may still be reported), `1` at least one error finding, `2` usage or input error.
 
-Flags: `--limit N` (default 128) when your provider differs; `--json`.
+Flags: `--limit N` (default 128) when your provider differs; `--plan` to print the drop plan; `--json`.
+
+When the manifest is over the limit the report also carries `tools.remediation`: which tools to drop
+(largest serialized schema first, name as tie-break), the resulting count, and `one_minimal_verified`
+— which is arithmetic, not a measurement: dropping `over` tools fits, dropping `over - 1` leaves
+`limit + 1` and cannot. It is a budget plan, not a claim that those tools are the least valuable.
 
 ## Tests
 
@@ -78,13 +84,14 @@ Flags: `--limit N` (default 128) when your provider differs; `--json`.
 python3 tests/test_silent_run_doctor.py
 ```
 
-16 stdlib `unittest` cases: 4 parsing, 11 behaviour (verdicts, exit codes, stdin ≡ file, JSON determinism, `examples/out` byte equality), 1 CLI/input-error path. All green, no network.
+18 stdlib `unittest` cases: 4 parsing, 13 behaviour (verdicts, exit codes, stdin ≡ file, JSON determinism, `examples/out` byte equality), 1 CLI/input-error path. All green, no network.
 
 ## Limitations
 
 - The `128` default is OpenAI **Chat Completions**. The Responses API took 279 and 2,000 tools in upstream's own test, so a silent run at 131 tools is only `confirmed-tool-overflow` when the log actually carries the rejection; otherwise the verdict stays `tool-overflow-unconfirmed`.
 - The event shapes accepted are the AG-UI ones (`RUN_STARTED`/`RUN_FINISHED`/`TEXT_MESSAGE_*`/`TOOL_CALL_*`); an unfamiliar stream yields a parse error (exit 2), not a guess.
-- The examples' manifests are **synthetic fixtures** (131 minimal tools). The 128 limit, the provider error text and the title-generation log line are quoted from upstream's source and issue #883; the fixture only reproduces their shape, and the README does not claim these are OpenBot's real 279 tools.
+- The examples' manifests are **synthetic fixtures** (131 minimal tools). The 128 limit, the provider error text and the title-generation log line are quoted from upstream's source and issue #883; the fixture only reproduces their shape, and the README does not claim these are OpenBot's real 279 tools. The drop plan is count/size arithmetic on
+the manifest you pass, and says nothing about which tools the Bot actually needs.
 - A silent run with a fitting manifest is reported as unattributed on purpose; this tool will not invent a cause.
 
 ## 本轮创新

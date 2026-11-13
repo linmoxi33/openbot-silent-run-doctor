@@ -16,6 +16,13 @@
       "severity": "error"
     },
     {
+      "message": "drop 3 tool(s) to fit; largest schemas first",
+      "must_drop": 3,
+      "one_minimal_verified": true,
+      "rule": "REMEDIATION_PLAN",
+      "severity": "info"
+    },
+    {
       "excerpts": [
         {
           "line": 5,
@@ -58,13 +65,23 @@
   ],
   "summary": {
     "errors": 3,
-    "infos": 1,
+    "infos": 2,
     "warnings": 0
   },
   "tool": "openbot-silent-run-doctor",
   "tools": {
     "count": 131,
-    "over_limit": true
+    "over_limit": true,
+    "remediation": {
+      "drop": [
+        "tool_100",
+        "tool_101",
+        "tool_102"
+      ],
+      "must_drop": 3,
+      "one_minimal_verified": true,
+      "remaining": 128
+    }
   },
   "verdict": "confirmed-tool-overflow"
 }

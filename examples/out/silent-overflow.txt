@@ -4,6 +4,7 @@ tools: 131 (limit 128)
 runs: 1
 [ERROR] RUN_FINISHED_WITHOUT_OUTPUT line 3: run ended at line 3 with no text/tool events and zero measured tokens
 [ERROR] TOOL_ARRAY_OVER_MODEL_LIMIT: 131 tools sent, model limit is 128 (over by 3)
+[INFO] REMEDIATION_PLAN: drop 3 tool(s) to fit; largest schemas first
 [ERROR] PROVIDER_REJECTION_IN_LOG: server log carries the provider's tool-array rejection
 [INFO] TITLE_GENERATION_EMPTY: thread-title generation also got an empty answer — corroborates a provider-side refusal
-summary: 3 error(s), 0 warning(s), 1 info
+summary: 3 error(s), 0 warning(s), 2 info

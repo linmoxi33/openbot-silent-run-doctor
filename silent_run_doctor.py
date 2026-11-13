@@ -79,8 +79,18 @@ def load_events(path):
     return events
 
 
+def load_tool_defs(path):
+    """Load tool definitions with their serialized size, for the drop plan."""
+    names, sizes = _load_tools_raw(path)
+    return [{"name": n, "bytes": b} for n, b in zip(names, sizes)]
+
+
 def load_tools(path):
     """Load an OpenAI tools array (list, or {"tools": [...]})."""
+    return _load_tools_raw(path)[0]
+
+
+def _load_tools_raw(path):
     try:
         with open(path, "r", encoding="utf-8") as fh:
             data = json.load(fh)
@@ -92,7 +102,7 @@ def load_tools(path):
         data = data.get("tools")
     if not isinstance(data, list):
         raise InputError("tools file must be a list or an object with a 'tools' list")
-    names = []
+    names, sizes = [], []
     for i, tool in enumerate(data):
         if not isinstance(tool, dict):
             raise InputError("tool %d is not an object" % i)
@@ -101,7 +111,8 @@ def load_tools(path):
         if not isinstance(name, str) or not name:
             raise InputError("tool %d has no name" % i)
         names.append(name)
-    return names
+        sizes.append(len(json.dumps(tool, sort_keys=True, separators=(",", ":")).encode("utf-8")))
+    return names, sizes
 
 
 def load_log(path):
@@ -176,7 +187,26 @@ def _finding(rule, severity, message, line=None, **extra):
     return out
 
 
-def diagnose(events, tool_names, log_text, limit=MODEL_TOOL_LIMIT):
+def plan_drop(names, sizes, limit):
+    """Pick which tools to drop to fit the limit: largest schema first, name as tie-break.
+
+    Minimality here is arithmetic, not measured: dropping `over` tools fits, and dropping
+    `over - 1` cannot (the count stays limit + 1), which is reported as one_minimal_verified.
+    """
+    over = len(names) - limit
+    if over <= 0:
+        return {"must_drop": 0, "remaining": len(names), "drop": [], "one_minimal_verified": True}
+    order = sorted(range(len(names)), key=lambda i: (-sizes[i], names[i], i))
+    drop = [names[i] for i in order[:over]]
+    return {
+        "must_drop": over,
+        "remaining": len(names) - len(drop),
+        "drop": drop,
+        "one_minimal_verified": len(names) - (over - 1) > limit,
+    }
+
+
+def diagnose(events, tool_names, log_text, limit=MODEL_TOOL_LIMIT, tool_sizes=None):
     findings = []
     runs = analyse_run(events)
     silent_runs = [r for r in runs if r["silent"]]
@@ -213,6 +243,19 @@ def diagnose(events, tool_names, log_text, limit=MODEL_TOOL_LIMIT):
                 count=count,
                 limit=limit,
                 over_by=count - limit,
+            )
+        )
+    remediation = None
+    if over:
+        sizes = tool_sizes if tool_sizes is not None else [1] * count
+        remediation = plan_drop(tool_names, sizes, limit)
+        findings.append(
+            _finding(
+                "REMEDIATION_PLAN",
+                "info",
+                "drop %d tool(s) to fit; largest schemas first" % remediation["must_drop"],
+                must_drop=remediation["must_drop"],
+                one_minimal_verified=remediation["one_minimal_verified"],
             )
         )
     seen = {}
@@ -293,7 +336,7 @@ def diagnose(events, tool_names, log_text, limit=MODEL_TOOL_LIMIT):
         "tool": "openbot-silent-run-doctor",
         "verdict": verdict,
         "model_tool_limit": limit,
-        "tools": {"count": count, "over_limit": over},
+        "tools": {"count": count, "over_limit": over, "remediation": remediation},
         "runs": runs,
         "findings": findings,
         "summary": {"errors": errors, "warnings": warnings, "infos": len(findings) - errors - warnings},
@@ -323,6 +366,7 @@ def build_parser():
     p.add_argument("--tools", required=True, help="tools manifest (OpenAI tools array or {\"tools\": [...]})")
     p.add_argument("--log", default=None, help="optional OpenBot/server log to look for the provider rejection")
     p.add_argument("--limit", type=int, default=MODEL_TOOL_LIMIT, help="model tool limit (default: 128)")
+    p.add_argument("--plan", action="store_true", help="include minimal drop plan in the text report")
     p.add_argument("--json", action="store_true", help="emit a machine-readable report on stdout")
     return p
 
@@ -334,16 +378,22 @@ def main(argv=None):
         return 2
     try:
         events = load_events(args.events)
-        names = load_tools(args.tools)
+        names, sizes = _load_tools_raw(args.tools)
         log_text = load_log(args.log)
     except InputError as exc:
         print("error: %s" % exc, file=sys.stderr)
         return 2
-    report = diagnose(events, names, log_text, limit=args.limit)
+    report = diagnose(events, names, log_text, limit=args.limit, tool_sizes=sizes)
     if args.json:
         print(json.dumps(report, indent=2, sort_keys=True))
     else:
         print(render_text(report))
+        plan = report["tools"]["remediation"]
+        if args.plan and plan:
+            print("drop plan (largest schemas first): %d tool(s), 1-minimal=%s"
+                  % (plan["must_drop"], plan["one_minimal_verified"]))
+            for name in plan["drop"]:
+                print("  - %s" % name)
     return 1 if report["summary"]["errors"] else 0
 
 

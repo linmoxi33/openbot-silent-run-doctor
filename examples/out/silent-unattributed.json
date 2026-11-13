@@ -32,7 +32,8 @@
   "tool": "openbot-silent-run-doctor",
   "tools": {
     "count": 5,
-    "over_limit": false
+    "over_limit": false,
+    "remediation": null
   },
   "verdict": "silent-unattributed"
 }
