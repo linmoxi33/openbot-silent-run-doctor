@@ -1,0 +1,2 @@
+{"type": "RUN_STARTED", "threadId": "th_x", "runId": "run_x"}
+{"type": "RUN_FINISHED", "threadId": "th_x", "runId": "run_x", "finishReason": "length", "usage": {"inputTokens": 0, "outputTokens": 0}}

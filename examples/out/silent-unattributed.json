@@ -1,0 +1,38 @@
+{
+  "findings": [
+    {
+      "finish_reason": "length",
+      "line": 2,
+      "message": "run ended at line 2 with no text/tool events and zero measured tokens",
+      "rule": "RUN_FINISHED_WITHOUT_OUTPUT",
+      "severity": "error"
+    },
+    {
+      "message": "the run was silent but the tools manifest is within the limit; refusing to guess a cause",
+      "rule": "ATTRIBUTION_ABSTAIN",
+      "severity": "warn"
+    }
+  ],
+  "model_tool_limit": 128,
+  "runs": [
+    {
+      "finish_line": 2,
+      "finish_reason": "length",
+      "output_event_lines": [],
+      "silent": true,
+      "start_line": 1,
+      "usage_zero": true
+    }
+  ],
+  "summary": {
+    "errors": 1,
+    "infos": 0,
+    "warnings": 1
+  },
+  "tool": "openbot-silent-run-doctor",
+  "tools": {
+    "count": 5,
+    "over_limit": false
+  },
+  "verdict": "silent-unattributed"
+}

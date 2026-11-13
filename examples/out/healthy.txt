@@ -1,0 +1,5 @@
+openbot-silent-run-doctor
+verdict: healthy
+tools: 5 (limit 128)
+runs: 1
+summary: 0 error(s), 0 warning(s), 0 info

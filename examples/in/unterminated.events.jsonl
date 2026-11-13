@@ -1,0 +1,2 @@
+{"type": "RUN_STARTED", "threadId": "th_u", "runId": "run_u"}
+{"type": "TEXT_MESSAGE_CONTENT", "messageId": "m1", "delta": "partial"}

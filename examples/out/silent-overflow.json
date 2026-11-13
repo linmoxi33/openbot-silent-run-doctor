@@ -1,0 +1,70 @@
+{
+  "findings": [
+    {
+      "finish_reason": "length",
+      "line": 3,
+      "message": "run ended at line 3 with no text/tool events and zero measured tokens",
+      "rule": "RUN_FINISHED_WITHOUT_OUTPUT",
+      "severity": "error"
+    },
+    {
+      "count": 131,
+      "limit": 128,
+      "message": "131 tools sent, model limit is 128 (over by 3)",
+      "over_by": 3,
+      "rule": "TOOL_ARRAY_OVER_MODEL_LIMIT",
+      "severity": "error"
+    },
+    {
+      "excerpts": [
+        {
+          "line": 5,
+          "text": "2026-11-13T07:00:03Z DEBUG upstream=openai invalid_request_error code=array_above_max_length"
+        },
+        {
+          "line": 6,
+          "text": "Invalid 'tools': array too long. Expected an array with maximum length 128, but got an array with length 279 instead."
+        }
+      ],
+      "log_lines": [
+        5,
+        6
+      ],
+      "message": "server log carries the provider's tool-array rejection",
+      "rule": "PROVIDER_REJECTION_IN_LOG",
+      "severity": "error"
+    },
+    {
+      "log_lines": [
+        2,
+        3,
+        4
+      ],
+      "message": "thread-title generation also got an empty answer \u2014 corroborates a provider-side refusal",
+      "rule": "TITLE_GENERATION_EMPTY",
+      "severity": "info"
+    }
+  ],
+  "model_tool_limit": 128,
+  "runs": [
+    {
+      "finish_line": 3,
+      "finish_reason": "length",
+      "output_event_lines": [],
+      "silent": true,
+      "start_line": 1,
+      "usage_zero": true
+    }
+  ],
+  "summary": {
+    "errors": 3,
+    "infos": 1,
+    "warnings": 0
+  },
+  "tool": "openbot-silent-run-doctor",
+  "tools": {
+    "count": 131,
+    "over_limit": true
+  },
+  "verdict": "confirmed-tool-overflow"
+}

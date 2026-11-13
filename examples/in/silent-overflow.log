@@ -1,0 +1,6 @@
+2026-11-13T06:59:58Z INFO  agent run start thread=th_883
+2026-11-13T07:00:01Z WARN  Thread name generation returned an empty or invalid title (attempt 1/3)
+2026-11-13T07:00:02Z WARN  Thread name generation returned an empty or invalid title (attempt 2/3)
+2026-11-13T07:00:03Z WARN  Thread name generation returned an empty or invalid title (attempt 3/3)
+2026-11-13T07:00:03Z DEBUG upstream=openai invalid_request_error code=array_above_max_length
+Invalid 'tools': array too long. Expected an array with maximum length 128, but got an array with length 279 instead.

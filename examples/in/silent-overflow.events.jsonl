@@ -1,0 +1,3 @@
+{"type": "RUN_STARTED", "threadId": "th_883", "runId": "run_1"}
+{"type": "STATE_SNAPSHOT", "snapshot": {"threadName": ""}}
+{"type": "RUN_FINISHED", "threadId": "th_883", "runId": "run_1", "finishReason": "length", "usage": {"inputTokens": 0, "outputTokens": 0}}

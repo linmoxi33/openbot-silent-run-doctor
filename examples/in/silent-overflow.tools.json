@@ -1,0 +1,2362 @@
+{
+ "tools": [
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_000",
+    "description": "synthetic fixture tool 0",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_001",
+    "description": "synthetic fixture tool 1",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_002",
+    "description": "synthetic fixture tool 2",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_003",
+    "description": "synthetic fixture tool 3",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_004",
+    "description": "synthetic fixture tool 4",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_005",
+    "description": "synthetic fixture tool 5",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_006",
+    "description": "synthetic fixture tool 6",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_007",
+    "description": "synthetic fixture tool 7",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_008",
+    "description": "synthetic fixture tool 8",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_009",
+    "description": "synthetic fixture tool 9",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_010",
+    "description": "synthetic fixture tool 10",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_011",
+    "description": "synthetic fixture tool 11",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_012",
+    "description": "synthetic fixture tool 12",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_013",
+    "description": "synthetic fixture tool 13",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_014",
+    "description": "synthetic fixture tool 14",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_015",
+    "description": "synthetic fixture tool 15",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_016",
+    "description": "synthetic fixture tool 16",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_017",
+    "description": "synthetic fixture tool 17",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_018",
+    "description": "synthetic fixture tool 18",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_019",
+    "description": "synthetic fixture tool 19",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_020",
+    "description": "synthetic fixture tool 20",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_021",
+    "description": "synthetic fixture tool 21",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_022",
+    "description": "synthetic fixture tool 22",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_023",
+    "description": "synthetic fixture tool 23",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_024",
+    "description": "synthetic fixture tool 24",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_025",
+    "description": "synthetic fixture tool 25",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_026",
+    "description": "synthetic fixture tool 26",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_027",
+    "description": "synthetic fixture tool 27",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_028",
+    "description": "synthetic fixture tool 28",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_029",
+    "description": "synthetic fixture tool 29",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_030",
+    "description": "synthetic fixture tool 30",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_031",
+    "description": "synthetic fixture tool 31",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_032",
+    "description": "synthetic fixture tool 32",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_033",
+    "description": "synthetic fixture tool 33",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_034",
+    "description": "synthetic fixture tool 34",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_035",
+    "description": "synthetic fixture tool 35",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_036",
+    "description": "synthetic fixture tool 36",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_037",
+    "description": "synthetic fixture tool 37",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_038",
+    "description": "synthetic fixture tool 38",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_039",
+    "description": "synthetic fixture tool 39",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_040",
+    "description": "synthetic fixture tool 40",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_041",
+    "description": "synthetic fixture tool 41",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_042",
+    "description": "synthetic fixture tool 42",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_043",
+    "description": "synthetic fixture tool 43",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_044",
+    "description": "synthetic fixture tool 44",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_045",
+    "description": "synthetic fixture tool 45",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_046",
+    "description": "synthetic fixture tool 46",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_047",
+    "description": "synthetic fixture tool 47",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_048",
+    "description": "synthetic fixture tool 48",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_049",
+    "description": "synthetic fixture tool 49",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_050",
+    "description": "synthetic fixture tool 50",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_051",
+    "description": "synthetic fixture tool 51",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_052",
+    "description": "synthetic fixture tool 52",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_053",
+    "description": "synthetic fixture tool 53",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_054",
+    "description": "synthetic fixture tool 54",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_055",
+    "description": "synthetic fixture tool 55",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_056",
+    "description": "synthetic fixture tool 56",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_057",
+    "description": "synthetic fixture tool 57",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_058",
+    "description": "synthetic fixture tool 58",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_059",
+    "description": "synthetic fixture tool 59",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_060",
+    "description": "synthetic fixture tool 60",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_061",
+    "description": "synthetic fixture tool 61",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_062",
+    "description": "synthetic fixture tool 62",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_063",
+    "description": "synthetic fixture tool 63",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_064",
+    "description": "synthetic fixture tool 64",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_065",
+    "description": "synthetic fixture tool 65",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_066",
+    "description": "synthetic fixture tool 66",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_067",
+    "description": "synthetic fixture tool 67",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_068",
+    "description": "synthetic fixture tool 68",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_069",
+    "description": "synthetic fixture tool 69",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_070",
+    "description": "synthetic fixture tool 70",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_071",
+    "description": "synthetic fixture tool 71",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_072",
+    "description": "synthetic fixture tool 72",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_073",
+    "description": "synthetic fixture tool 73",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_074",
+    "description": "synthetic fixture tool 74",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_075",
+    "description": "synthetic fixture tool 75",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_076",
+    "description": "synthetic fixture tool 76",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_077",
+    "description": "synthetic fixture tool 77",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_078",
+    "description": "synthetic fixture tool 78",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_079",
+    "description": "synthetic fixture tool 79",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_080",
+    "description": "synthetic fixture tool 80",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_081",
+    "description": "synthetic fixture tool 81",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_082",
+    "description": "synthetic fixture tool 82",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_083",
+    "description": "synthetic fixture tool 83",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_084",
+    "description": "synthetic fixture tool 84",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_085",
+    "description": "synthetic fixture tool 85",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_086",
+    "description": "synthetic fixture tool 86",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_087",
+    "description": "synthetic fixture tool 87",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_088",
+    "description": "synthetic fixture tool 88",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_089",
+    "description": "synthetic fixture tool 89",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_090",
+    "description": "synthetic fixture tool 90",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_091",
+    "description": "synthetic fixture tool 91",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_092",
+    "description": "synthetic fixture tool 92",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_093",
+    "description": "synthetic fixture tool 93",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_094",
+    "description": "synthetic fixture tool 94",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_095",
+    "description": "synthetic fixture tool 95",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_096",
+    "description": "synthetic fixture tool 96",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_097",
+    "description": "synthetic fixture tool 97",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_098",
+    "description": "synthetic fixture tool 98",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_099",
+    "description": "synthetic fixture tool 99",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_100",
+    "description": "synthetic fixture tool 100",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_101",
+    "description": "synthetic fixture tool 101",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_102",
+    "description": "synthetic fixture tool 102",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_103",
+    "description": "synthetic fixture tool 103",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_104",
+    "description": "synthetic fixture tool 104",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_105",
+    "description": "synthetic fixture tool 105",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_106",
+    "description": "synthetic fixture tool 106",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_107",
+    "description": "synthetic fixture tool 107",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_108",
+    "description": "synthetic fixture tool 108",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_109",
+    "description": "synthetic fixture tool 109",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_110",
+    "description": "synthetic fixture tool 110",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_111",
+    "description": "synthetic fixture tool 111",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_112",
+    "description": "synthetic fixture tool 112",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_113",
+    "description": "synthetic fixture tool 113",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_114",
+    "description": "synthetic fixture tool 114",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_115",
+    "description": "synthetic fixture tool 115",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_116",
+    "description": "synthetic fixture tool 116",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_117",
+    "description": "synthetic fixture tool 117",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_118",
+    "description": "synthetic fixture tool 118",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_119",
+    "description": "synthetic fixture tool 119",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_120",
+    "description": "synthetic fixture tool 120",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_121",
+    "description": "synthetic fixture tool 121",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_122",
+    "description": "synthetic fixture tool 122",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_123",
+    "description": "synthetic fixture tool 123",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_124",
+    "description": "synthetic fixture tool 124",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_125",
+    "description": "synthetic fixture tool 125",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_126",
+    "description": "synthetic fixture tool 126",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_127",
+    "description": "synthetic fixture tool 127",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_128",
+    "description": "synthetic fixture tool 128",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_129",
+    "description": "synthetic fixture tool 129",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "tool_130",
+    "description": "synthetic fixture tool 130",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "q": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "q"
+     ]
+    }
+   }
+  }
+ ]
+}
